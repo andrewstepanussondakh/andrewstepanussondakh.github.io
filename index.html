@@ -1,0 +1,1008 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- Bootstrap Font Icon CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+
+  <!-- JQuery UI -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+
+  <!-- Menghubungkan ke CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <link rel="icon" href="./image/icontitle.png">
+  <title>Home Monkey forest</title>
+</head>
+
+<body>
+
+
+  <!-- navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Monkey forest</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="objek_wisata.html">Objek Wisata</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sarana_akomodasi.html">Sarana dan Akomodasi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="wawasan.html">Wawasan</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="" placeholder="Cari..." aria-label="">
+          <button class="btn btn-outline-success" type="button" data-bs-toggle="modal"
+            data-bs-target="#cariModal">Cari</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+    <!-- Cari Modal -->
+    <div class="modal fade" id="cariModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="cariModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cariModalLabel">Cari Monyet</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Cari monyet!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Siap</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- end navbar -->
+
+  <!-- carousel -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./image/bg1.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Monkey forest</h5>
+          <p>Objek wisata Monkey Forest Ubud merupakan sebuah tempat cagar alam dan kompleks candi yang terletak di desa
+            Padangtegal Ubud, Bali.
+            Di tempat ini mempunyai kurang lebih 749 ekor monyet ekor panjang.</p>
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#ytModal">Jelajahi</button>
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#ytModal2">Video</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./image/bg2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Monkey forest</h5>
+          <p>Monkey Forest Ubud merupakan sebuah tempat cagar alam dan kompleks candi yang terletak di desa Padangtegal
+            Ubud, Bali.
+            Di tempat ini mempunyai kurang lebih 749 ekor monyet ekor panjang.</p>
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#ytModal">Jelajahi</button>
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#ytModal2">Video</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./image/bg3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Monkey forest</h5>
+          <p>Monkey Forest Ubud merupakan sebuah tempat cagar alam dan kompleks candi yang terletak di desa Padangtegal
+            Ubud, Bali.
+            Di tempat ini mempunyai kurang lebih 749 ekor monyet ekor panjang</p>
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#ytModal">Jelajahi</button>
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#ytModal2">Video</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+    <!-- YT Video-->
+    <!-- Modal -->
+    <div class="modal fade" id="ytModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="ytModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h3 class="modal-title" id="ytModalLabel">Jelajahi Monumen Bajra Sandhi</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" align="center">
+            <iframe width="1000" height="475" src="https://www.youtube.com/embed/DzSfH4W4sTE"
+              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-
+                media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- End YT Video-->
+
+    <!-- YT Video 2-->
+    <!-- Modal -->
+    <div class="modal fade" id="ytModal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="ytModalLabel2" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h3 class="modal-title" id="ytModalLabel2">Video Monumen Bajra Sandhi</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" align="center">
+            <iframe width="1000" height="475" src="https://www.youtube.com/embed/QU5XLGx_g-c"
+              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-
+                media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- End YT Video 2-->
+
+  <!-- end carousel -->
+
+  <p> </p>
+
+    <!-- Objek Wisata -->
+    <div class="container">
+      <p id="objek_wisata" class="h2" align="center">Objek Wisata</p>
+      <hr>
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Pura di dalam Hutan</h4>
+          <p class ="lead">Wisatawan juga bisa mengunjungi pura suci di dalam hutan.
+            Ada beberapa bangunan pura di kawasan ini...</p>
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+            data-bs-target="#wisata1">Selengkapnya</button>
+          <p> </p>
+          <h5>Sosial Media Kami</h5>
+          <!-- <a href="https://wa.me/6281355538777" class="btn btn-success"><span class="bi-whatsapp"></span> WhatsApp</a> -->
+          <a href="https://web.facebook.com/Monkey-Forest-Ubud-BALI-1055041971245450"
+            class="btn btn-primary"><span class="bi-facebook"></span> Facebook</a>
+          <a href="https://www.youtube.com/channel/UCBR8-60-B28hp2BmDPdntcQ" class="btn btn-danger"><span
+              class="bi-youtube"></span> Youtube</a>
+          <p></p>
+        </div>
+
+        <div class="col-md-6">
+          <img src="./image/bg3.jpg" class="rounded float-right img-fluid" width="537px">
+        </div>
+      </div>
+
+      <hr>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="./image/bg1.jpeg" class="rounded float-right img-fluid" width="537px">
+        </div>
+
+        <div class="col-md-6">
+          <h4>Berinteraksi dengan Kera</h4>
+          <p class="lead">Hal utama yang menarik wisatawan
+            datang dan memilih paket wisata Monkey...</p>
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+            data-bs-target="#wisata2">Selengkapnya</button>
+          <p> </p>
+          <h5>Sosial Media Kami</h5>
+          <!-- <a href="https://wa.me/6281355538777" class="btn btn-success"><span class="bi-whatsapp"></span> WhatsApp</a> -->
+          <a href="https://web.facebook.com/Monkey-Forest-Ubud-BALI-1055041971245450"
+            class="btn btn-primary"><span class="bi-facebook"></span> Facebook</a>
+          <a href="https://www.youtube.com/channel/UCBR8-60-B28hp2BmDPdntcQ" class="btn btn-danger"><span
+              class="bi-youtube"></span> Youtube</a>
+        </div>
+      </div>
+
+      <p> </p>
+
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+          </li>
+          <li class="page-item active"><a class="page-link" href="#objek_wisata">1</a></li>
+          <li class="page-item disabled"><a class="page-link" href="#">2</a></li>
+          <li class="page-item disabled"><a class="page-link" href="#">3</a></li>
+          <li class="page-item disabled">
+            <a class="page-link disabled" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+
+      <hr>
+
+    </div>
+
+    <!-- Objek Wisata Modal -->
+    <div class="modal fade" id="wisata1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="wisata1Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title" id="wisata1Label">Pura di Dalam Hutan</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="./image/bg3.jpg" title="Pura di Dalam Hutan" class="img-fluid">
+            <hr>
+
+            <p>Ada tiga pura yang berada di area Monkey Forest. Pertama adalah Pura Dalem Agung sebagai pura utama yang berada di barat daya hutan. Pura ini merupakan tempat penyembahan Hyang Widhi (Tuhan) dalam manifestasi Dewa Siwa, Sang Pelebur.</p> 
+              
+            <p>Pura ke dua adalah Pura Beji yang berada di barat laut Monkey Forest, tempat penyembahan Hyang Widhi (Tuhan) dalam manifestasi Dewi Gangga. Di pura ini terdapat sumber air suci alami yang digunakan umat Hindu Bali untuk melukat atau pembersihan diri secara spiritual.</p>
+            
+            <br>
+            <figcaption class="blockquote-footer">
+              Sumber: <cite title="Source Title">https://travel.kompas.com/read/2019/08/13/120800027/berbagai-bukti-monkey-forest-ubud-tempat-keramat#:~:text=Pura%20ke%20tiga%20adalah%20Pura,kuburan%20yang%20digunakan%20secara%20temporer.</cite>
+            </figcaption>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="wisata2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="wisata2Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title" id="wisata2Label">Berinteraksi Dengan Kera</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="./image/bg1.jpeg" title="Lapangan Puputan Margarana Renon" class="img-fluid">
+            <hr>
+           <p>Monkey Forest di Gianyar, Bali, merupakan lokasi wisata yang jadi daya tarik turis.
+
+            Apalagi di saat liburan panjang. Turis dari Indonesia dan mancanegara tertawa riang bersama primata yang berbaur dengan manusia.</p> 
+            
+           <p>Kera di tempat ini terkenal jinak dan ramah hingga mampu beradaptasi dengan pengunjung.
+            
+            Termasuk ikut berswafoto ataupun berfoto bersama-sama. Selain itu tempat ini terlihat asri dengan lingkungan berudara segar.</p> 
+            <br>
+            <figcaption class="blockquote-footer">
+              Sumber: <cite title="Source Title">https://www.tribunnews.com/travel/2017/09/07/berinteraksi-dengan-kera-di-monkey-forest/cite>
+            </figcaption>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- End Objek Wisata -->
+
+  <p> </p>
+
+    <!-- Sarana Akomodasi -->
+
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" media="screen" />
+
+    <script type="text/javascript">
+      $(function () {
+        $("#tabs").tabs();
+      });
+    </script>
+
+    <div class="container">
+      <p class="h2" align="center" id="sarana_akomodasi">Sarana dan Akomodasi</p>
+      <p> </p>
+      <div id="tabs" align="center">
+        <ul>
+          <li><a href="#hotel">Hotel</a></li>
+          <li><a href="#restoran">Restoran</a></li>
+          <li><a href="#transport">Transport</a></li>
+        </ul>
+        <div id="hotel">
+          <div class="container">
+            <div class="row">
+
+              <div class="col-12">
+                <p> </p>
+              </div>
+
+              <div class="col-md-6 col-lg-4">
+                <div class="card-box">
+                  <div class="card-thumbnail">
+                    <img src="./image/Alila Ubud.jpg" class="img-fluid" alt="">
+                  </div>
+                  <p> </p>
+                  <h3>Alila Ubud</h3>
+
+                  <p> </p>
+
+                  <p class="text-secondary"> Desa, Melinggih Kelod, Payangan, Gianyar Regency, Bali 80572</p>
+
+                  <p>Rp. 1.408.601,- / Malam</p>
+
+                  <div class="d-grid gap-2">
+                    <a href="https://www.alilahotels.com/ubud" class="btn btn-primary" id="btn-hotel"
+                      title="https://www.alilahotels.com/ubud"><span class="bi bi-globe2"> Website Hotel</a>
+                    <a href="https://wa.me/6281355538777" class="btn btn-primary" id="btn-hotel">Book Now</a>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4">
+                <div class="card-box">
+                  <div class="card-thumbnail">
+                    <img src="./image/oyo ubud.jpg" class="img-fluid" alt="">
+                  </div>
+                  <p> </p>
+                  <h3>OYO 1840 Kubu Ubud Hotel</h3>
+
+                  <p> </p>
+
+                  <p class="text-secondary">Jl. Raya Sayan, Banjar Sidhu, Kecamatan Ubud, Kabupaten Gianyar, Bali 80571</p>
+
+                  <p>Rp. 245.000,- / Malam</p>
+
+                  <div class="d-grid gap-2">
+                    <a href="https://www.oyorooms.com/id/"
+                      class="btn btn-primary" id="btn-hotel"
+                      title="https://www.oyorooms.com/id/"><span
+                        class="bi bi-globe2"> Website Hotel</a>
+                    <a href="https://wa.me/6281355538777" class="btn btn-primary" id="btn-hotel">Book Now</a>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4">
+                <div class="card-box">
+                  <div class="card-thumbnail">
+                    <img src="./image/reddorz.jpg" class="img-fluid" alt="">
+                  </div>
+                  <p> </p>
+                  <h3>RedDoorz Hostel near Ubud Palace</h3>
+
+                  <p> </p>
+
+                  <p class="text-secondary">Suweta, Ubud, Kecamatan Ubud, Kabupaten Gianyar, Bali 80571</p>
+
+                  <p>Rp. 300.000,- / Malam</p>
+
+                  <div class="d-grid gap-2">
+                    <a href="https://www.reddoorz.com/" class="btn btn-primary" id="btn-hotel"
+                      title="https://www.reddoorz.com/"><span class="bi bi-globe2"> Website Hotel</a>
+                    <a href="https://wa.me/6281355538777" class="btn btn-primary" id="btn-hotel">Book Now</a>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div id="restoran">
+          <div class="container">
+            <div class="row">
+
+              <div class="col-12">
+                <p> </p>
+              </div>
+
+              <div class="col-md-6 col-lg-4">
+                <div class="card-box">
+                  <div class="card-thumbnail">
+                    <img src="./image/res1.jpg" class="img-fluid" alt="">
+                  </div>
+                  <p> </p>
+                  <h3>Nia Ubud Restaurant & Balinese Cooking Class</h3>
+
+                  <p> </p>
+
+                  <p class="text-secondary">Jl. Raya Ubud No.24, Ubud, Kecamatan Ubud, Kabupaten Gianyar, Bali 80571</p>
+
+                  <div class="d-grid">
+                    <a href="https://wa.me/6281355538777" class="btn btn-success"><span
+                        class="bi-telephone-fill"></span> Hubungi Restoran</a>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4">
+                <div class="card-box">
+                  <div class="card-thumbnail">
+                    <img src="./image/res2.jpg" class="img-fluid" alt="">
+                  </div>
+                  <p> </p>
+                  <h3>Uma Resto Ubud</h3>
+
+                  <p> </p>
+
+                  <p class="text-secondary">Jl. Monkey Forest, Ubud, Kecamatan Ubud, Kabupaten Gianyar, Bali 80571</p>
+
+                  <div class="d-grid">
+                    <a href="https://wa.me/6281355538777" class="btn btn-success"><span
+                        class="bi-telephone-fill"></span> Hubungi Restoran</a>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4">
+                <div class="card-box">
+                  <div class="card-thumbnail">
+                    <img src="./image/res3.jpg" class="img-fluid" alt="">
+                  </div>
+                  <p> </p>
+                  <h3>Restaurant Locavore</h3>
+
+                  <p> </p>
+
+                  <p class="text-secondary">Jl. Dewisita No.10, Ubud, Kecamatan Ubud, Kabupaten Gianyar, Bali 80571</p>
+
+                  <div class="d-grid gap-2">
+                    <a href="https://wa.me/6281355538777" class="btn btn-success"><span
+                        class="bi-telephone-fill"></span> Hubungi Restoran</a>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div id="transport">
+          <p class="text-center">
+          </p>
+          <h5 class="text-center">Maaf, layanan belum tersedia.</h5>
+        </div>
+
+      </div>
+    </div>
+    <!-- End Sarana Akomodasi -->
+
+    <p> </p>
+    <!-- Progressbar -->
+    <div class="container">
+      <p class="h2" align="center">Kunjungan Wisatawan</p>
+      <p> </p>
+      <div class="progress" style="height: 20px;">
+        <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"
+          style="width: 35%">Jawa: 35%</div>
+      </div>
+      <br>
+
+      <div class="progress" style="height: 20px;">
+        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
+          style="width: 85%">Bali: 85%</div>
+      </div>
+      <br>
+
+      <div class="progress" style="height: 20px;">
+        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+          style="width: 70%">Lombok: 70%</div>
+      </div>
+      <br>
+
+      <div class="progress" style="height: 20px;">
+        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"
+          style="width: 45%">Lainnya: 45%</div>
+      </div>
+
+      <hr>
+
+    </div>
+    <p> </p>
+
+    <!-- End Progressbar -->
+
+
+    <!-- Galeri -->
+
+    <script type="text/javascript">
+      $(function () {
+
+        $("#kotakgeser").sortable();
+        $("#kotakgeser").disableSelection();
+
+      });
+    </script>
+
+    <div class="container">
+      <p class="h2" align="center" id="galeri">Galeri Kami</p>
+      <hr>
+
+      <div class="row" id="kotakgeser" align="center">
+
+        <div class="col">
+          <a href="#" class="text-decoration-none" onclick="return false;">
+            <img src="./image/monyet1.jpg" class="rounded" width="240px" data-bs-toggle="modal"
+              data-bs-target="#galeri1">
+            <p> </p>
+            <figcaption class="blockquote-footer">
+              Gambar <cite title="Source Title">Galeri 1</cite>
+            </figcaption>
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="#" class="text-decoration-none" onclick="return false;">
+            <img src="./image/monyet2.jpg" class="rounded" width="240px" data-bs-toggle="modal"
+              data-bs-target="#galeri2">
+            <p> </p>
+            <figcaption class="blockquote-footer">
+              Gambar <cite title="Source Title">Galeri 2</cite>
+            </figcaption>
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="#" class="text-decoration-none" onclick="return false;">
+            <img src="./image/monyet3.jpg" class="rounded" width="240px" data-bs-toggle="modal"
+              data-bs-target="#galeri3">
+            <p> </p>
+            <figcaption class="blockquote-footer">
+              Gambar <cite title="Source Title">Galeri 3</cite>
+            </figcaption>
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="#" class="text-decoration-none" onclick="return false;">
+            <img src="./image/monyet4.jpg" class="rounded" width="240px" data-bs-toggle="modal"
+              data-bs-target="#galeri4">
+            <p> </p>
+            <figcaption class="blockquote-footer">
+              Gambar <cite title="Source Title">Galeri 4</cite>
+            </figcaption>
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="#" class="text-decoration-none" onclick="return false;">
+            <img src="./image/monyet5.jpg" class="rounded" width="240px" data-bs-toggle="modal"
+              data-bs-target="#galeri5">
+            <p> </p>
+            <figcaption class="blockquote-footer">
+              Gambar <cite title="Source Title">Galeri 5</cite>
+            </figcaption>
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="#" class="text-decoration-none" onclick="return false;">
+            <img src="./image/monyet6.jpg" class="rounded" width="240px" data-bs-toggle="modal"
+              data-bs-target="#galeri6">
+            <p> </p>
+            <figcaption class="blockquote-footer">
+              Gambar <cite title="Source Title">Galeri 6</cite>
+            </figcaption>
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="#" class="text-decoration-none" onclick="return false;">
+            <img src="./image/monyet7.jpg" class="rounded" width="240px" data-bs-toggle="modal"
+              data-bs-target="#galeri7">
+            <p> </p>
+            <figcaption class="blockquote-footer">
+              Gambar <cite title="Source Title">Galeri 7</cite>
+            </figcaption>
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="#" class="text-decoration-none" onclick="return false;">
+            <img src="./image/monyet8.jpg" class="rounded" width="240px" data-bs-toggle="modal"
+              data-bs-target="#galeri8">
+            <p> </p>
+            <figcaption class="blockquote-footer">
+              Gambar <cite title="Source Title">Galeri 8</cite>
+            </figcaption>
+          </a>
+        </div>
+
+      </div>
+      <hr>
+    </div>
+
+
+    <!-- Galeri Modal -->
+    <div class="modal fade" id="galeri1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="galeri1Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title" id="galeri1Label">Galeri 1</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" align="center">
+            <img src="./image/monyet1.jpg" title="Galeri 1" class="img-fluid">
+            <p>&nbsp;</p>
+            <figcaption class="blockquote-footer">
+              Gambar <cite title="Source Title">Galeri 1</cite>
+            </figcaption>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="galeri2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="galeri2Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title" id="galeri1Label">Galeri 2</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" align="center">
+            <img src="./image/monyet2.jpg" title="Galeri 2" class="img-fluid">
+            <p>&nbsp;</p>
+            <figcaption class="blockquote-footer">
+              Gambar <cite title="Source Title">Galeri 2</cite>
+            </figcaption>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="galeri3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="galeri3Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title" id="galeri3Label">Galeri 3</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" align="center">
+            <img src="./image/monyet3.jpg" title="Galeri 3" class="img-fluid">
+            <p>&nbsp;</p>
+            <figcaption class="blockquote-footer">
+              Gambar <cite title="Source Title">Galeri 3</cite>
+            </figcaption>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="galeri4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="galeri4Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title" id="galeri4Label">Galeri 4</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" align="center">
+            <img src="./image/monyet4.jpg" title="Galeri 4" class="img-fluid">
+            <p>&nbsp;</p>
+            <figcaption class="blockquote-footer">
+              Gambar <cite title="Source Title">Galeri 4</cite>
+            </figcaption>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="galeri5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="galeri5Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title" id="galeri5Label">Galeri 5</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" align="center">
+            <img src="./image/monyet5.jpg" title="Galeri 5" class="img-fluid">
+            <p>&nbsp;</p>
+            <figcaption class="blockquote-footer">
+              Gambar <cite title="Source Title">Galeri 5</cite>
+            </figcaption>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="galeri6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="galeri6Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title" id="galeri6Label">Galeri 6</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" align="center">
+            <img src="./image/monyet6.jpg" title="Galeri 6" class="img-fluid">
+            <p>&nbsp;</p>
+            <figcaption class="blockquote-footer">
+              Gambar <cite title="Source Title">Galeri 6</cite>
+            </figcaption>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="galeri7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="galeri7Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title" id="galeri7Label">Galeri 7</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" align="center">
+            <img src="./image/monyet7.jpg" title="Galeri 7" class="img-fluid">
+            <p>&nbsp;</p>
+            <figcaption class="blockquote-footer">
+              Gambar <cite title="Source Title">Galeri 7</cite>
+            </figcaption>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="galeri8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="galeri8Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title" id="galeri8Label">Galeri 8</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" align="center">
+            <img src="./image/monyet8.jpg" title="Galeri 8" class="img-fluid">
+            <p>&nbsp;</p>
+            <figcaption class="blockquote-footer">
+              Gambar <cite title="Source Title">Galeri 8</cite>
+            </figcaption>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- End Galeri Modal-->
+
+    <!-- End Galeri -->
+
+    <p> </p>
+  </div>
+
+  <!-- Form -->
+  <div class="container-fluid" style="background-color: white;">
+    <div class="container-fluid">
+      <p class="h2" align="center">Hubungi Kami</p>
+      <hr>
+      <div class="row">
+
+        <div class="col-md-6">
+          <!-- Google Maps -->
+          <p class="lead"><strong>Google Maps Location</strong></p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.7955823072575!2d115.25866971433467!3d-8.519217988639676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23d230963d115%3A0x5a2f8658c8e27d88!2sMonkey%20forest%20entrance!5e0!3m2!1sid!2sid!4v1643301462495!5m2!1sid!2sid"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <p></p>
+          <!-- End Google Maps -->
+        </div>
+
+        <div class="col-md-6">
+          <form class="row g-3">
+
+            <div class="col-md-6">
+              <label for="namadepan" class="form-label">Nama Depan</label>
+              <input type="text" class="form-control" id="namadepan">
+            </div>
+
+            <div class="col-md-6">
+              <label for="namabelakang" class="form-label">Nama Belakang</label>
+              <input type="text" class="form-control" id="namabelakang">
+            </div>
+
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Password</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+
+            <div class="col-12">
+              <label for="notelp" class="form-label">No Telp</label>
+              <input type="text" class="form-control" id="notelp">
+            </div>
+
+            <div class="col-12">
+              <label for="alamat" class="form-label">Alamat</label>
+              <input type="text" class="form-control" id="alamat">
+            </div>
+
+            <div class="col-md-6">
+              <label for="kota" class="form-label">Kota</label>
+              <input type="text" class="form-control" id="kota">
+            </div>
+
+            <div class="col-md-4">
+              <label for="kecamatan" class="form-label">Kecamatan</label>
+              <select id="kecamatan" class="form-select">
+                <option selected>Pilih</option>
+                <option>Denpasar Timur</option>
+                <option>Denpasar Barat</option>
+                <option>Denpasar Selatan</option>
+                <option>Denpasar Utara</option>
+              </select>
+            </div>
+
+            <div class="col-md-2">
+              <label for="pos" class="form-label">Kode Pos</label>
+              <input type="text" class="form-control" id="pos">
+            </div>
+
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Data yang dimasukkan sudah benar.
+                </label>
+              </div>
+            </div>
+
+            <script type="text/javascript">
+              function showAlert() {
+                if ($("#myAlert").find("div#myAlert2").length == 0) {
+                  $("#myAlert").append("");
+                }
+                $("#myAlert").css("display", "");
+              }
+            </script>
+
+            <div class="container" style="display:none;" id="myAlert">
+              <div class="alert alert-success alert-dismissible fade show" role="alert" id="myAlert2">
+                <i class="bi bi-hand-thumbs-up-fill"></i>
+                <strong>Berhasil menekan tombol "Ya, kirim!"</strong>, namun data belum dapat terkirim.
+              </div>
+
+            </div>
+
+            <div class="d-grid col-2">
+              <!-- <button class="btn btn-primary" type="submit">Kirim</button> -->
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Kirim
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">Yakin kirim identitas anda?</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Anda tidak dapat membatalkannya setelah di kirim.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                      <button type="button" class="btn btn-primary" data-bs-dismiss="modal" value="showAlert"
+                        onclick="showAlert();">Ya,
+                        kirim!</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <p> </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- End Form -->
+
+  <!-- footer -->
+  <footer class="text-white text-center" style="background-color:#09ff00;">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <p>copyright @2020 Web Design</p>
+        </div>
+        <div class="col-md-4">
+          <ul style="text-align:left;" class="list-unstyled">
+            <li>
+              <a href="index.html" class="text-light stretched-link">Home</a>
+            </li>
+            <li>
+              <a href="objek_wisata.html" class="text-light stretched-link">Objek Wisata</a>
+            </li>
+            <li>
+              <a href="sarana_akomodasi.html" class="text-light stretched-link">Sarana Akomodasi</a>
+            </li>
+            <li>
+              <a href="wawasan.html" class="text-light stretched-link">Wawasan</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4>PT Web Desain indonesia</h4>
+          <p>Desain terpecaya di indonesia</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- end footer -->
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
